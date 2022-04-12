@@ -1,39 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mihuhuhuhu</title>
     <style>
-        h1{
-            color:purple;
-            background-color: aqua;
+        body{
+            margin: 10px;
+            padding:0;
         }
-        h1:hover{
+        h1{
+            padding:10px;
+            text-align: center;
+        }
+        .pct{
+            text-align: center;
+            border:1px solid black;
+        }
+        .pct:hover{
+            animation: myborder 2s;
+        }
+       
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            padding: 10px 20px;
+            margin-top: 0;
+            background-image: url("bg.jpg");
+            box-shadow: 5px 5px 5px 5px #888888;
+
+        }
+        h2{
+            padding-left: 10px;
+            background-color: rgb(129, 247, 231);
+            color:aliceblue;
+            line-height: 30px;
+            border-radius: 3px;
+            /* box-shadow: 10px 10px 5px #999999; */
+            animation:myshadow 2s infinite;
+        }
+        
+        h2:hover{
             display:none;
         }
+      
+        .header{
+            background-color: rgb(14, 217, 231);
+            height:250px;
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            justify-content: space-around;
+        }
+        .bintro{
+            font-size: larger;
+        }
+        .bintro a{
+            text-decoration: none;
+        }
+        .bintro a:hover{
+            font-size:25px;
+            animation:mydecoration 2s infinite;
+        }
+    
+        .goback{
+            width: 40px;
+            height: 40px;
+            background-color: #313131;
+            position:fixed;
+            right:20px;
+            bottom: 20px;
+            border-radius: 50%;
+            animation: myright 5s infinite;
+        }
+   
     </style>
 </head>
 <body>
-    <h1>自我介绍☺</h1>
-    <h1>mihuhuhuhu</h1>
-    <img src="\study\R-C.jpg" alt="寄了" width="200px">
-    <hr>
-    <h1>hhh</h1>
+    <div class="container">
+        <div class="header">
+            <div class="pct">
+                <img src="R-C.jpg" alt="" width="310px">
+            </div>
+            <div class="bintro">
+                姓名：mihu<br>
+                电话：2333 <br>
+                邮箱：123456789 <br>
+                自闭社恐鼠鼠人罢了<br>
+                school:<a href="suibe.html">suibe</a>
+            </div>
+
+        </div>
+        
+        
+        <hr>
+        <h2>3.14</h2>
+        <table style="width:100%" border=1 cellspacing=0>
+            <tr>
+                <td>爱好</td>
+                <td>学校</td>
+                <td>职务</td>
+            </tr>
+            <tr>
+                <td>睡觉</td>
+                <td>？？</td>
+                <td>???</td>
+            </tr>
+            <tr>
+                <td>吃饭</td>
+                <td>？？</td>
+                <td>？？？</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>3.1415926</h2>
+        <ol>
+            <li>什么时候能转运啊？</li>
+            <li>什么时候能转运啊？</li>
+            <li>什么时候能转运啊？</li>
+            <li>什么时候能转运啊？</li>
+        </ol>
+        <hr>
+        <h2>3.141592653589793</h2>
         <ul>
-            <li> 性别：男</li>
-            <li> 爱好：睡觉</li>
-            <li>联系方式:自闭社恐鼠鼠人没有联系方式</li>
-        </ul> 
-    <hr>
-    <table>
-    <h1>......</h1>    
-    <hl><b>背景</b></hl>
-    <tr><th>单位 </th><th>职务</th></tr>
-    <tr><td>你猜？</td><td>203底层鼠鼠烂人</td></tr>
-    </table> 
-    <hr>
-<h2><a href="https://www.baidu.com">表单链接</a></h2>    
+            <li>害</li>
+            <li>害</li>
+            <li>害</li>
+            <li>害</li>
+        </ul>
 </body>
 </html>

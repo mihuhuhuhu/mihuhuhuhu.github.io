@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .news_bg{
+        position: relative;
+        height: 800px;
+    }
+    .news_bg>img{
+        width: 100%;
+        height: 100%;
+        left:0px;
+        top: 0px;
+        position:absolute;
+        z-index: -1;
+    }
+    .bottom{
+        position: absolute;
+        top:700px;
+        left:240px;
+        flex-direction: row;
+        display: flex;
+            flex-direction: row;
+            justify-content: space-around;    
+    }
+    .b{
+        float:left;
+        height:45px;
+        width: 200px;
+        margin-right: 10px;
+        text-align: center;
+    }
+    .b .ba{
+        position: relative;
+        font-size: 20px;
+        color: white;
+        top:20%;
+    }
+    .links a{
+        font-size: x-large;
+    }
+    .links a:hover{
+        text-decoration:overline;
+        transition-duration: 2s;
+    }
+    .header .header_left{
+
+        height: 100px;
+        width: 33%;
+        float:left;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+    .header .header_middle{
+        float:left;
+        margin:auto;
+        width: 34%;
+        height:100px;
+    }
+    .header_middle>img{
+        width:100%;
+        height:100%;
+    }
+
+    .header .header_right{
+
+        height: 100px;
+        width: 33%;
+        float:right;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+    .news_bg .inner{
+        height: 100px;
+        width:100%;
+        left:0px;
+        top: 100px;
+        position:absolute;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+    .menu_link a{
+        font-size: x-large;
+        color: azure;
+    }
+
+    .news_bg .footer{
+        background: none;
+        left:0px;
+        top: 700px;
+        position:absolute;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+    .link_con{
+        width: 18%;
+        font-size: x-large;
+        color: azure;
+        text-align: center;
+    }
+    #link_con1{
+        background-image: linear-gradient(to right, rgb(255, 130, 130),violet);
+    }
+    #link_con2{
+        background-image: linear-gradient(to right, violet,rgb(121, 121, 255));
+    }
+    #link_con3{
+        background-image: linear-gradient(to right, rgb(121, 121, 255),rgb(125, 255, 125));
+    }
+    #link_con4{
+        background-image: linear-gradient(to right, rgb(125, 255, 125),rgb(255, 255, 130));
+    }
+    #link_con5{
+        background-image: linear-gradient(to right, rgb(255, 255, 130),orange);
+    }
+    .main{
+        margin-top: 10px;
+    }
+    .main .catalog{
+        height: 100px;
+        
+    }
+    .news{
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+    .newss{
+        margin-top: 20px;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+    .main .news1{
+        background-color: antiquewhite;
+        height: 300px;
+        width: 45%;
+        float:left;
+        margin-top: 10px;
+    }
+    .main .news2{
+        background-color: rgb(250, 232, 208);
+        height: 300px;
+        width: 20%;
+        margin-top: 10px;
+        float:left;
+    }
+    .moreabout{
+        margin-right: 10px;
+        float:right;
+    }
+    .tt{
+        clear: right;
+        height: 600px;
+        width:45%;
+        background-color: rgb(250, 251, 252);
+        margin: 10px 0px;
+        display:flex;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+    .tt2{
+        height: 600px;
+        width:30%;
+        background-color: rgb(152, 188, 212);
+        margin: 10px 0px;
+        display:flex;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+    .title{
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+    .clear{ 
+        height:0px;
+        font-size:0;
+        clear:both;
+    }
+    .news_cat{
+        height:500px;
+        display: flex;
+        align-items: center; 
+        flex-direction: column;
+        justify-content:space-around;
+        text-align: center;
+        
+    }
+    .stt{
+        height:20%;
+        width: 90%;
+        margin-bottom: 10px;
+        background-color: rgb(250, 250, 250);
+        box-shadow: 0px 0px 10px #888888;
+        font-size: 20px;
+        text-align: center;
+    }
+    .stt3{
+        height:20%;
+        width: 90%;
+        margin-bottom: 10px;
+        background-color: rgb(250, 250, 250);
+        box-shadow: 0px 0px 10px #888888;
+        font-size: 20px;
+        text-align: center;
+    }
+    .news_box{
+        margin-bottom: 5px;
+        height:15%;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        text-align: center;
+        align-items: center; 
+    }
+    .stt5{
+        height:80%;
+        width: 45%;
+        margin-bottom: 10px;
+        background-color: rgb(250, 250, 250);
+        box-shadow: 0px 0px 10px #888888;
+        font-size: 20px;
+        text-align: center;
+    }
+    .news_cat>.stt:hover{
+        background-color: red;
+        color: white;
+
+    }
+
+</style>
+</head>
+<body>
+<div class="news_bg">
+    <img src="back.png" alt="" width="100%">
+    <div class="header">
+        <div class="header_left">
+            <div class="links"><a href="" >学生</a></div> 
+            <div class="links"><a href="" >教工</a></div> 
+            <div class="links"><a href="" >校友</a></div> 
+            <div class="links"><a href="" >访客</a></div> 
+        </div>
+        <div class="header_middle">
+            <img src="head.png" alt="" width="100">
+        </div>
+        <div class="header_right">
+            <div class="links"><a href="" >一网通办</a></div> 
+            <div class="links"><a href="" >邮箱</a></div> 
+            <div class="links"><a href="" >VPN</a></div> 
+            <div class="links"><a href="" >English</a></div> 
+
+        </div>
+    </div>
+    <div class="inner">
+        <div class="menu_link"><a href="" >学校概况</a></div> 
+        <div class="menu_link"><a href="" >机构设置</a></div> 
+        <div class="menu_link"><a href="" >师资队伍</a></div> 
+        <div class="menu_link"><a href="https://www.suibe.edu.cn/7317/list.htm" >科学研究</a></div> 
+        <div class="menu_link"><a href="" >人才培养</a></div> 
+        <div class="menu_link"><a href="" >招生就业</a></div> 
+        <div class="menu_link"><a href="" >国际交流</a></div> 
+        <div class="menu_link"><a href="" >公开事项</a></div> 
+    </div>
+    <div class="bottom">
+        <div class="b" style="background-image: linear-gradient(to right, rgb(247, 63, 109), rgb(109, 11, 139));"><a class="ba">校园要闻</a></div>
+        <div class="b" style="background-image: linear-gradient(to right, rgb(131, 4, 170),  rgb(18, 138, 194));"><a class="ba">新闻快讯</a></div>
+        <div class="b" style="background-image: linear-gradient(to right, rgb(9, 202, 236), rgb(62, 219, 180));"><a class="ba">媒体报道</a></div>
+        <div class="b" style="background-image: linear-gradient(to right, rgb(77, 241, 200), rgb(207, 243, 4));"><a class="ba">专题网站</a></div>
+        <div class="b" style="background-image: linear-gradient(to right, rgb(171, 201, 3), rgb(248, 205, 14));"><a class="ba">精彩影像</a></div>
+    </div>
+</div>
+<div class="main">
+    <div class="catalog">
+        <h1>校园要闻</h1>
+    </div>
+    <div class="news">
+        <div class="news1">
+            <img src="111.png" alt="" width="100%" height="100%">
+        </div>
+        <div class="news2">
+            <img src="111.png" alt="" width="100%" height="100%">
+        </div>
+        <div class="news2">
+            <img src="222.png" alt="" width="100%" height="100%">
+        </div>
+        
+    </div>
+    <div class="newss">            
+        <div class="news2">
+            <img src="222.png" alt="" width="100%" height="100%">
+        </div>
+        <div class="news2">
+            <img src="111.png" alt="" width="100%" height="100%">
+        </div>
+        <div class="news1">
+            <img src="222.png" alt="" width="100%" height="100%">
+        </div>
+    </div>
+    <div class="moreabout">
+        <a href=""><h1>更多</h1></a>
+    </div>
+    <div class="clear"></div>
+    <div class="title">
+        <div class="tt">
+            <div class="catalog">
+                <h1>新闻快讯</h1>
+            </div>
+            <div class="news_cat">
+                <div class="stt">
+                   news1
+                </div>
+                <div class="stt">
+                    news2
+                </div>
+                <div class="stt">
+                    news3
+                </div>
+                <div class="stt">
+                    news4
+                </div>
+            </div>
+        </div>
+        <div class="tt">
+            <div class="catalog">
+                <h1>媒体报道</h1>
+            </div>
+            <div class="news_cat">
+                <div class="stt"></div>
+                <div class="stt"></div>
+                <div class="stt"></div>
+                <div class="stt"></div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="moreabout">
+        <a href=""><h1>更多</h1></a>
+    </div>
+    <div class="clear"></div>
+
+    <div class="title">
+        <div class="tt2">
+            <div class="catalog">
+                <h1>科研动态</h1>
+            </div>
+            <div class="news_cat">
+                <div class="stt3"></div>
+                <div class="stt3"></div>
+                <div class="stt3"></div>
+                <div class="stt3"></div>
+                <div class="stt3"></div>
+            </div>
+            
+        </div>
+        <div class="tt2">
+            <div class="catalog">
+                <h1>精彩影像</h1>
+            </div>
+
+        </div>
+        <div class="tt2">
+            <div class="catalog">
+                <h1>专题网站</h1>
+            </div>
+            <div class="news_cat">
+                <div class="news_box">
+                    <div class="stt5"></div>
+                    <div class="stt5"></div>
+                </div>
+                <div class="news_box">
+                    <div class="stt5"></div>
+                    <div class="stt5"></div>
+                </div>
+                <div class="news_box">
+                    <div class="stt5"></div>
+                    <div class="stt5"></div>
+                </div>
+                <div class="news_box">
+                    <div class="stt5"></div>
+                    <div class="stt5"></div>
+                </div>
+                <div class="news_box">
+                    <div class="stt5"></div>
+                    <div class="stt5"></div>
+                </div>
+                <div class="news_box">
+                    <div class="stt5"></div>
+                    <div class="stt5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="moreabout">
+        <a href=""><h1>更多</h1></a>
+    </div>
+    <div class="clear"></div>
+
+</div>
+<div class="footer">
+    <img src="333.png" alt="" width="100%" height="90%">
+</div>
+</body>
+</html>
