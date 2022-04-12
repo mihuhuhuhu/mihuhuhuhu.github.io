@@ -1,128 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>mihu的个人简历</title>
+    <link rel="stylesheet" href="style.css" />
     <style>
-        body{
-            margin: 10px;
-            padding:0;
-        }
-        h1{
-            padding:10px;
-            text-align: center;
-        }
-        .pct{
-            text-align: center;
-            border:1px solid black;
-        }
-        .pct:hover{
-            animation: myborder 2s;
-        }
-       
-        .container {
-            width: 800px;
-            margin: 0 auto;
-            padding: 10px 20px;
-            margin-top: 0;
-            background-image: url("bg.jpg");
-            box-shadow: 5px 5px 5px 5px #888888;
-
-        }
-        h2{
-            padding-left: 10px;
-            background-color: rgb(129, 247, 231);
-            color:aliceblue;
-            line-height: 30px;
-            border-radius: 3px;
-            /* box-shadow: 10px 10px 5px #999999; */
-            animation:myshadow 2s infinite;
-        }
-        
-        h2:hover{
-            display:none;
-        }
-      
-        .header{
-            background-color: rgb(14, 217, 231);
-            height:250px;
+        .aw1{
             display: flex;
             flex-direction: row;
-            align-items:center;
             justify-content: space-around;
+            text-align: center;
+            border:1px solid black;
+            
         }
-        .bintro{
-            font-size: larger;
+        .container {
+            width: 800px;
+            margin:0 auto;
+            background-color: #b1eee6;
+            padding: 20px;
+            box-shadow: 5px 5px 10px #01000c;
         }
-        .bintro a{
-            text-decoration: none;
+ 
+        .aw1:hover{
+            animation: myborder 2s;
         }
-        .bintro a:hover{
-            font-size:25px;
-            animation:mydecoration 2s infinite;
+        @keyframes myborder {
+            50% {border: 15px solid lightblue;}
         }
-    
-        .goback{
-            width: 40px;
-            height: 40px;
-            background-color: #313131;
-            position:fixed;
-            right:20px;
-            bottom: 20px;
-            border-radius: 50%;
-            animation: myright 5s infinite;
-        }
-   
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <div class="pct">
-                <img src="R-C.jpg" alt="" width="310px">
-            </div>
-            <div class="bintro">
-                姓名：mihu<br>
-                电话：2333 <br>
-                邮箱：123456789 <br>
-                自闭社恐鼠鼠人罢了<br>
-                school:<a href="suibe.html">suibe</a>
-            </div>
 
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="aw1">
+            <div class="dt">
+                <img src="R-C.jpg" width="200px" />
+              </div>  
+              <div class="aw">
+                  <ul>
+                      <li><b>姓名：</b>mihu</li>
+                      <li><b>性别：</b>男</li>
+                      <li>
+                        <b>学校：</b>
+                        <a href="suibe.html" target="_blank">suibe</a>
+                      </li>
+                      <li><b>邮箱：</b>2333@.com</li>
+                      <li><b>生日：</b>5465465</li>
+                    </ul>
+              </div>
         </div>
-        
-        
-        <hr>
-        <h2>3.14</h2>
-        <table style="width:100%" border=1 cellspacing=0>
-            <tr>
-                <td>爱好</td>
-                <td>学校</td>
-                <td>职务</td>
-            </tr>
-            <tr>
-                <td>睡觉</td>
-                <td>？？</td>
-                <td>???</td>
-            </tr>
-            <tr>
-                <td>吃饭</td>
-                <td>？？</td>
-                <td>？？？</td>
-            </tr>
-        </table>
-        <hr>
-        <h2>3.1415926</h2>
-        <ol>
-            <li>什么时候能转运啊？</li>
-            <li>什么时候能转运啊？</li>
-            <li>什么时候能转运啊？</li>
-            <li>什么时候能转运啊？</li>
-        </ol>
-        <hr>
-        <h2>3.141592653589793</h2>
-        <ul>
-            <li>害</li>
-            <li>害</li>
-            <li>害</li>
-            <li>害</li>
-        </ul>
-</body>
+      <hr />
+      <h3>学校</h3>
+      <table style="width:100%">
+        <tr>
+          <td>时间</td>
+          <td>学校</td>
+          <td>职务</td>
+        </tr>
+        <tr>
+          <td>2222</td>
+          <td>2222</td>
+          <td>2222</td>
+        </tr>
+        <tr>
+          <td>3333</td>
+          <td>3333</td>
+          <td>3333</td>
+        </tr>
+      </table>
+
+      <h3>个人爱好.</h3>
+      <ol>
+        <li>睡觉</li>
+        <li>吃饭</li>
+      </ol>
+      <h3>自我介绍</h3>
+
+      <p>我是鼠鼠人
+        <br />
+      </p>
+    </div>
+  </body>
 </html>
